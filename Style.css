@@ -1,0 +1,501 @@
+*
+{
+	text-decoration: none;
+	list-style: none;
+	list-style-type: none;
+	user-select:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+}
+body
+{	
+	background-image: url('images/Background/Background-dark.jpg');
+	height: 100%;
+	margin: 0;
+	display: block;
+	margin-left: 4.5em;
+	padding: 5px 20px 13px 20px;
+}
+#top_header
+{
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+	background-color: #2f2f2f;
+	width: 100%;
+	height: 50px;
+	top: 0;
+	left: 0em;
+	right: 0em;
+	/*box-shadow: 1px 1px 4px #131313;*/
+}
+#footer
+{
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+	background-color: #2f2f2f;
+	width: 100%;
+	height: 48px;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+}
+#logo
+{
+	background-image: url('images/Logo/logo.png');
+	position: fixed;
+	background-size: 165px;
+	width: 100%;
+	height: 60px;
+	top:-0.3em;
+	left: 35em;
+	right: 35em;
+	background-repeat: no-repeat;
+}
+#more_op
+{
+	position: absolute;
+	overflow: hidden;
+	background-color: #2f2f2f;
+	width: 180px;
+	height: 100%;
+	right: 0em;
+	top: 0em;
+	/*box-shadow: -1px -1px 4px #131313;*/
+}
+#more_op div
+{
+	color: #efefef;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 14px;
+	padding-left: 4px;
+	opacity: 1;
+}
+#more_op div> p
+{
+	color: #efefef;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 14px;
+	padding-left: 2px;
+}
+#more_op > div > div > a > div
+{
+	font-size: 22px;
+}
+#more_op > div > div > a > div:hover
+{
+	color: #4d7bff;
+}
+#size
+{
+	right: 7.1em;
+	top: 6em;
+	position: absolute;
+	width:70px;
+	height: 70px;
+	border-radius: 3px;
+	background-color: #4e4e4d;
+}
+#radval
+{
+	font-size: 60px;
+	font-family: 'Arial Narrow';
+	font-weight: 100;
+	padding-left: 2px;
+	color: #4d7bff;
+}
+.cent_bar
+{
+	position: absolute;
+	left: 7.45em;
+	background-color: #2f2f2f;
+	border-radius: 5px;
+	width: 70px;
+}
+#nav-wrapper
+{
+	width: 100%;
+	margin:0 auto;
+	text-align: left;
+}
+
+nav ul
+{
+	padding:0;
+	margin: 0;
+	position: relative;
+	min-width: 30px;
+}
+nav ul li 
+{
+	display: inline-block;
+	width: 70px;
+}
+nav ul li:hover
+{
+	background-color: #58a4d9;
+
+}
+nav ul li a, visited
+{
+	margin-top: -0.5em;
+	color: #efefef;
+	font-style: arial,sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	display: block;
+	padding: 15px;
+}
+nav ul li:hover ul
+{
+	display: block;
+}
+nav ul ul
+{
+	display: none;
+	position: absolute;
+	background-color: #2f2f2f;
+	margin-left: auto;
+}
+nav ul ul li {
+    display: block;
+    font-style: arial,sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+}
+nav ul ul li a:hover 
+{
+    color: #efefef;
+}
+.Side_bar
+{
+	position: absolute;
+	background-color: #2f2f2c;
+	opacity: 1;
+	width: 60px;
+	height: 100%;
+	left: 0em;
+	top: 0em;
+	/*box-shadow: 1px 1px 4px #131313;*/
+}
+
+h1
+{
+	text-align: center;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 20px;
+	color: #ffffff;
+}
+p
+{
+	font-size: 14px;
+	font-family: arial;
+}
+
+
+#font_change
+{
+	position: absolute;
+	top: 11em;
+}
+
+.radcontrol
+{
+	position: relative;
+	right: -3.2em;
+	top: -3.2em;
+	width: 35px;
+	height: 35px;
+	background-color:#191919;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	box-shadow: 1px 1px 2px #131313;
+}
+
+#brush
+{
+	position: relative;
+	right: -0.5em;
+	font-weight: bold;
+	font-size: 14px;
+	color: #efefef;
+	top: 1em;
+}
+
+#colorpicker
+{
+	width: 55px;
+	height: 20px;
+	top: 0.8em;
+	position: absolute;
+	border-color: transparent;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 2px 2px rgba(0,0,0,0.5);
+	display: inline-block;
+}
+
+.ModalDialog
+{
+	position: fixed;
+	font-family: arial,sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background:rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	-ms-transition: opacity 400ms ease-in;
+	transition:opacity 400ms ease-in;
+	pointer-events:none;
+}
+.ModalDialog:target
+{
+	opacity: 1;
+	pointer-events:auto;
+}
+.ModalDialog > div
+{
+	width: 820px;
+	position: relative;
+	margin:10% auto;
+	padding: 5px 20px 13px 20px;
+	background:#fff;
+}
+.ModalDialog > div img
+{
+	opacity: 0.7;
+}
+.ModalDialog > div img:hover
+{
+	opacity: 1;
+}
+.close
+{
+	background: #606061;
+	color: #fff;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align:center;
+	top: -10px;
+	width: 24px;
+	font-weight: bold;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover
+{
+	background-color: red;
+}
+
+.ModalDialog2
+{
+	position: fixed;
+	font-family: arial,sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background:rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	-ms-transition: opacity 400ms ease-in;
+	transition:opacity 400ms ease-in;
+	pointer-events:none;
+}
+.ModalDialog2:target
+{
+	opacity: 1;
+	pointer-events:auto;
+}
+.ModalDialog2 > div
+{
+	width: 250px;
+	height: 70px;
+	position: relative;
+	margin:10% auto;
+	padding: 5px 20px 13px 20px;
+	background:#fff;
+}
+.ModalDialog2 > div > p
+{
+	font-weight: bold;
+	color: #2e3235;
+}
+.ModalDialog2 > div > input:hover
+{
+	outline-color: orange;
+}
+.URLButton
+{
+	position:relative;
+	top: 0em;
+	left: 3.6em;
+	width: 150px;
+	height: 30px;
+}
+
+#Draw_Circle
+{
+	position: relative;
+	top: 1em;
+
+}
+#DrawMethod
+{
+	position: absolute;
+	width: 80px; float:left;
+	left: 0.4em;
+	height: 30px;
+	top: 0.5em;
+}
+#font_change select
+{
+	width: 150px;
+	height: 30px;
+}
+#DrawMethod div 
+{
+	left: 4em;
+	width:100%;
+	height: 50px;
+	margin-bottom: 5px;
+}
+
+#DrawOn 
+{
+	position: absolute;
+	z-index: -1;
+	background-color: #fff;
+	border:1px;
+	width: 1000px;
+	height: 532px;
+	left: 0;
+	top: 0em;
+	box-shadow: 1px 2px 3px #131313;
+}
+
+.canvas_holder
+{
+
+	z-index: -1;
+	background-color: #fff;
+	border:1px;
+	width: 1000px;
+	height: 532px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-56%, -50%);
+	box-shadow: 1px 2px 3px #131313;
+}
+#temp_canvas 
+{
+	position: absolute;
+	left: 0px; right: 0;
+	bottom: 0; top: 0;
+}
+
+#TextBoxs
+{
+	position: absolute;
+	border:2px dashed grey;
+	outline:0;
+	display: none;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#free
+{
+	background-image: url('images/tools/Brush-icon.png');
+	background-size: 45px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+}
+#circle
+{
+	background-image: url('images/tools/Angle-Thingy-icon.png');
+	background-size: 45px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+}
+#rect
+{
+	background-image: url('images/tools/Canvas-icon.png');
+	background-size: 45px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+}
+#octagon
+{
+	background-image: url('images/tools/octagon.png');
+	background-size: 45px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+}
+#line
+{
+	background-image: url('images/tools/Ruler-icon.png');
+	background-size: 45px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+}
+#text
+{
+	background-image: url('images/tools/Type-icon.png');
+	background-size: 45px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+}
+#eraser
+{
+	background-image: url('images/tools/Eraser-icon.png');
+	background-size: 45px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+}
+#free:hover
+{
+	cursor: pointer;
+	opacity: 1;
+}
+#circle:hover
+{
+	cursor: pointer;
+	opacity: 1;
+}
+#rect:hover
+{
+	cursor: pointer;
+	opacity: 1;
+}
+#octagon:hover
+{
+	opacity: 1;
+}
+#line:hover
+{
+	cursor: pointer;
+	opacity: 1;
+}
+#text:hover
+{
+	cursor: pointer;
+	opacity: 1;
+}
+#eraser:hover
+{
+	cursor: pointer;
+	opacity: 1;
+}

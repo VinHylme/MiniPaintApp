@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lizo Editor</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script class="cssdeck" src="jquery-1.11.1.js"></script>
+	<link rel="stylesheet" href='Style.css'/>
+	<link rel="shortcut icon" href="logoo.ico">
+</head>
+<body>	
+<section>
+<div class="Side_bar"></div>		
+</section>
+	<section>
+	<div id="top_header">
+	</div>
+		<div class="cent_bar">
+			<nav>
+				<div id="nav-wrapper">
+					<ul>
+						<li><a href="#">Open</a>
+							<ul>
+								<li><a href="#SelectorDialog">Select</a></li>
+								<li><a href="#UrlDialog">URL</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+			<div id="logo">
+			</div>		
+		<div id="footer">
+
+		</div>
+			<div id="SelectorDialog" class="ModalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">x</a>
+					<h2>Select Image</h2>
+					<a href="#"><img id="Img1"  src="images/Test1.jpg" width="200px" height="175px" alt="Image No.1" /></a>
+					<a href="#"><img id="Img2"  src="images/Test2.jpg" width="200px" height="175px" alt="Image No.2"/></a>
+					<a href="#"><img id="Img3"  src="images/Test3.jpg" width="200px" height="175px" alt="Image No.3"/></a>
+					<a href="#"><img id="Img4"  src="images/Test4.jpg" width="200px" height="175px"	alt="Image No.4" /></a>
+
+				</div>
+			</div>
+			<div id="UrlDialog" class="ModalDialog2">
+				<div>
+					<a href="#close" title="Close" class="close">x</a> 
+					<p>Get image via URL</p>
+					<a href="#"><input type="button" class="URLButton" id="URLButton" name="URLButton"  value="Get Image"/></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+			<div id="DrawMethod">
+	        	<div id="free"></div>
+	        	<div id="circle"></div>
+	        	<div id="rect"></div>
+	        	<div id="octagon"></div>
+	        	<div id="line"></div>
+	        	<div id="text"></div>
+	        	<div id="eraser"></div>
+	        </div>
+	        <div id="more_op">
+	        	<div id="size">
+					<div id="rad">
+						<span id="radval">10</span>
+						<a href="#"><div id="decrad" class="radcontrol">-</div></a>
+						<a href="#"><div id="incrad" class="radcontrol">+</div></a>
+					</div>
+	        	</div>
+	        	<div id="font_change">
+	        		<p>Font Style </p>
+		        	<select id="font_selector">
+			        	<option value='1' selected="selected">Calibri</option>
+			        	<option value='2'>Arial</option>
+						<option value='3'>Brush Script MT</option>
+						<option value='4'>Comic Sans MS</option>
+			        	<option value='5'>Courier New</option>
+						<option value='6'> Gigi</option>
+		        	</select>
+		        	<p>Font Size </p>
+		        	<select id="font_size">
+		        	
+		        		<option value="1">12px</option>
+		        		<option value="2">18px</option>
+		        		<option value="3">22px</option>
+		        		<option value="4">28px</option>
+		        		<option value="5">33px</option>
+		        		<option value="6">42px</option>
+		        		<option value="7">100px</option>
+		        	</select>
+	        	</div>
+	        	<div class="colour_picker">
+					<p>Color:&nbsp&nbsp<input type="color" value="#" id="colorpicker" name="colorpicker" oninput="setColour(colorpicker.value)" list="colours"></p>
+					<datalist id="colours">
+					<option alt="black">#000000</option>
+					<option>#ff0000</option>
+					<option>#ff7700</option>
+					<option>#fcff1e</option>
+					<option>#1e88ff</option>
+					<option>#1effe2</option>
+					<option>#84eb20</option>
+					<option>#eb20e9</option>
+					<option>#bcbcbc</option>
+					<option>#790a78</option>
+					</datalist>
+				</div>
+				<p id="brush">Brush Size</p>
+
+	        </div>
+		</div>
+		</div>
+			<div class="canvas_holder">
+				<div id="DrawOn">
+					<canvas id="canvas1">Your browser does not support this feature </canvas>
+				</div>
+				
+			</div>
+		<script src="main.js"></script>
+	</section>
+</body>
+</html>			
